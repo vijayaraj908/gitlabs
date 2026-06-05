@@ -96,6 +96,9 @@ h1 {
  display: flex;
  gap: 8px;
 }
+.edit-btn,
+.save-btn,
+.cancel-btn,
 .delete-btn {
  border: none;
  border-radius: 8px;
@@ -104,12 +107,33 @@ h1 {
  font-size: 14px;
  transition: 0.2s ease;
 }
+.edit-btn {
+ background: #ffc107;
+}
+.save-btn {
+ background: #28a745;
+ color: white;
+}
+.cancel-btn {
+ background: #6c757d;
+ color: white;
+}
 .delete-btn {
  background: #dc3545;
  color: white;
 }
+.edit-btn:hover,
+.save-btn:hover,
+.cancel-btn:hover,
 .delete-btn:hover {
  opacity: 0.9;
+}
+.edit-input {
+ flex: 1;
+ padding: 10px;
+ border: 2px solid #667eea;
+ border-radius: 8px;
+ font-size: 16px;
 }
 @media (max-width: 600px) {
  .todo-input {
